@@ -5,9 +5,9 @@ mythic_notify
 
 **Changes:** \
 Changed to ``PlayerPedId()`` \
-Auto speed limiter that can be toggled with ``RegisterKeyMapping`` (Can be remapped in-game)
+Auto speed limiter using ``RegisterKeyMapping`` \
+can be toggled with **E** (default, can be remapped in-game)
 
-Press **E** (default) when in a vehicle to **toggle** Speedlimiter
 
 
 Credits to Big-Yoda and thelindat
