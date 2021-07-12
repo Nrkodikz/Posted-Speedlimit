@@ -6,8 +6,8 @@ mythic_notify
 **Changes:** \
 Changed to ``PlayerPedId()`` \
 Auto speed limiter using ``RegisterKeyMapping`` \
-can be toggled with **G** (default, can be remapped in-game)
-
+Toggle with **G** (default, can be remapped in-game)
+Turns off automatically when vehicle exited
 
 
 Credits to Big-Yoda and thelindat
