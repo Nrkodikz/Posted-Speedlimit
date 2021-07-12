@@ -32,13 +32,13 @@ Citizen.CreateThread(function()
             SpeedGui()
             local vehicle = GetVehiclePedIsIn(playerPed, false) 
             SetVehicleMaxSpeed(vehicle, meterspeed)
-        else
+        elseif not IsPedInAnyVehicle(playerPed) then
             speedlimit = 0
             closeGui()
             Citizen.Wait(500)
 
             if speedlimiter == true then
-                SetVehicleMaxSpeed(GetVehiclePedIsIn(playerPed, false), 89.4)
+                SetVehicleMaxSpeed(GetPlayersLastVehicle(playerPed), 89.4)
                 --TriggerEvent("FeedM:showNotification", '~r~Speed Limiter deactivated')
 		exports['mythic_notify']:SendAlert('inform', 'Speed Limiter deactivated.', 2500)			
 			
@@ -81,4 +81,4 @@ RegisterCommand('speedlimiter', function()
     end
 end, false)
 
-RegisterKeyMapping('speedlimiter', '(Vehicle) Toggle Speedlimiter', 'keyboard', 'e')
+RegisterKeyMapping('speedlimiter', '(Vehicle) Toggle Speedlimiter', 'keyboard', 'g')
