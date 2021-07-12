@@ -1,4 +1,4 @@
-<h3 align='center'>Posted-Speedlimit with auto speedlimiter</h3>
+<h3 align='center'>Posted-Speedlimit with auto speed limiter</h3>
 
 **Requirements:** \
 mythic_notify
@@ -6,7 +6,7 @@ mythic_notify
 **Changes:** \
 Changed to ``PlayerPedId()`` \
 Auto speed limiter using ``RegisterKeyMapping`` \
-can be toggled with **E** (default, can be remapped in-game)
+can be toggled with **G** (default, can be remapped in-game)
 
 
 
